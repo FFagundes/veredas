@@ -1,0 +1,198 @@
+html{
+	height: 100%;
+}
+
+body{
+	height: 100%;
+	padding: 0px;
+	margin: 0px;
+	background-color: #c0dd9b;
+	color: #fff;
+	font-family: arial;
+	letter-spacing: 2px;
+}
+
+h2, .h2{
+	font-size: 42px;
+	font-weight: normal;
+	letter-spacing: 4px;
+	padding: 30px 10px;
+	margin: 0 0 0 60px;
+}
+
+h3, .h3{
+	font-size: 36px;
+	font-weight: normal;
+	letter-spacing: 3px;
+	padding: 5px;
+	margin: 10px 5px;
+	line-height: 0.9;
+}
+
+p{
+	line-height: 1.8;
+}
+
+.clear{
+	clear: both;
+}
+
+.content-wrapper{
+	width: 1024px;
+	margin: 0 auto;
+}
+
+header{
+	width: 100%;
+	z-index: 10;
+	background-color: #000;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+	.logo{
+		float: left;
+		width: 281px;
+		padding: 10px;
+		text-indent: -9999px;
+	}
+
+		h1{
+			line-height: 0px;
+			padding: 0px;
+			margin: 0px;
+		}
+
+		.logo-img{
+			border: none;
+		}
+
+	.menu{
+		float: right;
+	}
+
+		.menu-container{
+			padding: 0px;
+			margin: 0px;
+			list-style: none;
+		}
+
+			.menu-item{
+				display: inline;
+				float: left;	
+			}
+
+				.menu-item a{
+					color: #fff;
+					text-decoration: none;
+					font-size: 20px;
+					letter-spacing: 1px;
+					display: block;
+					padding: 25px 20px 40px 20px;
+					margin: 15px 0 0 0;
+				}
+
+					.menu-item a:hover{
+						background-color: #fff;
+						color: #000;
+					}
+
+					.menu-item a.green:hover{
+						background-color: #c0dd9b;
+					}
+
+footer{
+	background-color: #000;
+}
+
+	.footer-header{
+		background-color: #fff;
+		color: #000;
+	}
+
+	.footer-main{
+		padding: 50px 0 30px 0;
+	}
+
+		.contact-form{
+			width: 430px;
+			margin: 0 0 0 130px;
+			float: left;
+		}
+
+			.contact-form-label{
+				padding: 8px 0;
+				display: block;
+				clear: both;
+			}
+
+			.contact-form-label span{
+				font-size: 18px;
+				letter-spacing: 2px;
+				display: block;
+				float: left;
+				margin: 10px 0 0 0;
+			}
+
+			.contact-form-field{
+				width: 330px;
+				margin: 5px 0;
+				float: right;
+			}
+
+				.contact-form-field.input{
+					line-height: 25px;
+				}
+
+			.contact-form-submit{
+				float: right;
+				background-color: rgba(0, 0, 0, 0);
+				border: 2px solid #fff;
+				color: #fff;
+				font-size: 16px;
+				letter-spacing: 2px;
+				margin: 10px 0 0 0;
+				padding: 5px 40px;
+			}
+
+
+		.footer-right{
+			width: 340px;
+			float: right;
+		}
+
+			.footer-right h3{
+				margin-top: 0;
+				margin-left: 0;
+				padding-top: 0;
+				padding-left: 0;
+			}
+
+	.footer-footer{
+		background-color: #fff;
+		color: #666;
+	}
+
+		.footer-footer p{
+			padding: 20px;
+			margin: 0px;
+		}
+
+		.copyright{
+			float: left;
+			text-align: left;
+		}
+
+		.credits{
+			float: right;
+			text-align: right;
+		}
+
+			.credits a{
+				color: #666;
+			}
+
+			.credits a:hover{
+				text-decoration: underline;
+			}
