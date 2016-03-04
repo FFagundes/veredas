@@ -1,0 +1,16 @@
+@font-face {
+	font-family: archive;
+	src: url('fonts/Archive.otf');
+}
+
+@font-face {
+	font-family: nexa;
+	font-weight: bold;
+	src: url('fonts/Nexa_Bold.otf');
+}
+
+@font-face {
+	font-family: nexa;
+	font-weight: lighter;
+	src: url('fonts/Nexa_Light.otf');
+}

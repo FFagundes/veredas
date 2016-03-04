@@ -8,8 +8,9 @@ body{
 	margin: 0px;
 	background-color: #fff;
 	color: #fff;
-	font-family: arial;
+	font-family: nexa;
 	letter-spacing: 2px;
+	font-weight: 
 }
 
 h1, .h1{
@@ -47,7 +48,7 @@ p{
 
 .content-wrapper{
 	width: 100%;
-        max-width: 1024px;
+    max-width: 1024px;
 	margin: 0 auto;
 }
 
