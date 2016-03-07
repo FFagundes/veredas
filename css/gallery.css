@@ -8,7 +8,7 @@
 
 #content {
 	margin: 0 auto;
-	width: 800px;
+	width: 890px;
 	height: 200px;
 }
 
@@ -62,10 +62,15 @@
 
 .gallery-img {
     position: relative;
+    -web-kit-transition: all 2s;transition: all 2s;
+    
 }
 
 .gallery-img img {
     width: 100%;
+    
+    
+ 
 }
 
 .gallery-img p {
@@ -74,9 +79,64 @@
     right: 150px;
     font-size: 3em;
     color: #fff;
-    text-shadow: 1px 1px 10px #636363;
-    
+    text-shadow: 1px 1px 10px #636363;  
 }
 
-.on {display: block;}
+#gallery-01 {transition: all 2s;}
+
+.on {display: block; }
+.on img {opacity: 1;
+        -web-kit-transition: all 2s;
+        }
+
 .off {display: none;}
+.off img {opacity: 0;}
+
+@-webkit-keyframes animate-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@-moz-keyframes animate-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes animate-width {
+    0% {
+        width: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@-webkit-keyframes animate-height {
+    0% {
+        height: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@-moz-keyframes animate-height {
+    0% {
+        height: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}
+@keyframes animate-height {
+    0% {
+        height: 0;
+    }
+    100% {
+        visibility: visible;
+    }
+}

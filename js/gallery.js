@@ -11,7 +11,7 @@
             speed: 200,
             easing: null,
             vertical: false,
-            circular: true,
+            circular: false,
             visible: 3,
             start: 0,
             scroll: 1,

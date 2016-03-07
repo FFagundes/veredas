@@ -117,27 +117,27 @@
                     </div>
                     <div id="content">
                         <p class="gallery-p">VEJA ! quem toca aqui:</p>
-                        <a href="#" class="prev" title="Anterior"><img src="imagens/prev.jpg" alt="" /></a>
+                        <a class="prev" title="Anterior"><img src="imagens/prev.jpg" alt="" /></a>
                         <div id="carrossel">
                             <ul>
-                                <li>
-                                    <img class="gallery-thumb" id="thumb-01" src="imagens/thumb-01.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                <li id="thumb-01">
+                                    <img class="gallery-thumb" src="imagens/thumb-01.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
                                 </li>
-                                <li>
-                                    <img class="gallery-thumb" id="thumb-02" src="imagens/thumb-02.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                <li id="thumb-02">
+                                    <img class="gallery-thumb" src="imagens/thumb-02.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
                                 </li>
-                                <li>
-                                    <img class="gallery-thumb" id="thumb-03" src="imagens/thumb-03.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                <li id="thumb-03">
+                                    <img class="gallery-thumb" src="imagens/thumb-03.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
                                 </li>
-                                <li>
-                                    <img class="gallery-thumb" id="thumb-04" src="imagens/thumb-04.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                <li id="thumb-04">
+                                    <img class="gallery-thumb" src="imagens/thumb-04.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
                                 </li>
-                                <li>
-                                    <img class="gallery-thumb" id="thumb-05" src="imagens/thumb-05.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                <li id="thumb-05">
+                                    <img class="gallery-thumb" src="imagens/thumb-05.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
                                 </li>
                             </ul>
                         </div>
-                        <a href="#" class="next" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
+                        <a class="next" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
                         <script>
                             $(function () {
                                 $("#carrossel").jCarouselLite({
@@ -146,7 +146,6 @@
                                     visible: 4
                                 });
                             });
-
                             document.getElementById('thumb-01').onclick = function () {
                                 document.getElementById('gallery-01').className = 'gallery-img on';
                                 document.getElementById('gallery-02').className = 'gallery-img off';
