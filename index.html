@@ -4,10 +4,15 @@
 
         <link rel="stylesheet" type="text/css" href="css/main.css">
         <link rel="stylesheet" type="text/css" href="css/slider.css">
+        <link rel="stylesheet" type="text/css" href="css/gallery.css">
 
         <script type="text/javascript" src="js/main.js"></script>
         <script type="text/javascript" src="js/jquery-1.12.1.min.js"></script>
         <script type="text/javascript" src="js/slider.js"></script>
+        <script type="text/javascript" src="js/gallery.js"></script>
+
+
+
         <meta charset="utf-8"/>
     </head>
     <body>
@@ -88,8 +93,96 @@
                         <div class="clear"></div>
                     </div>
                 </div>
-                <div class="content-wrapper who-play-main">
-                    <img id="ima" src="imagens/01.jpg" alt="" />
+                <div class="who-play-main">
+                    <div class="gallery-img on" id="gallery-01">
+                        <img src="imagens/01.jpg" alt="" />
+                        <p>Lorem Ipsum Bandum</p>
+                    </div>
+                    <div class="gallery-img off" id="gallery-02">
+                        <img src="imagens/02.jpg" alt="" />
+                        <p>Le Bands Dunds Kunk</p>
+                    </div>
+                    <div class="gallery-img off" id="gallery-03">
+                        <img src="imagens/03.jpg" alt="" />
+                        <p>Xorus Nanus Nenem</p>
+                    </div>
+                    <div class="gallery-img off" id="gallery-04">
+                        <img src="imagens/04.jpg" alt="" />
+                        <p>Peladus Bandus Nakedus</p>
+                    </div>
+                    <div class="gallery-img off" id="gallery-05">
+                        <img src="imagens/05.jpg" alt="" />
+                        <p>Guitarus Tacandus Tremendus</p>
+                    </div>
+                    <div id="content">
+                        <p class="gallery-p">VEJA ! quem toca aqui:</p>
+                        <a href="#" class="prev" title="Anterior"><img src="imagens/prev.jpg" alt="" /></a>
+                        <div id="carrossel">
+                            <ul>
+                                <li>
+                                    <img class="gallery-thumb" id="thumb-01" src="imagens/thumb-01.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                </li>
+                                <li>
+                                    <img class="gallery-thumb" id="thumb-02" src="imagens/thumb-02.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                </li>
+                                <li>
+                                    <img class="gallery-thumb" id="thumb-03" src="imagens/thumb-03.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                </li>
+                                <li>
+                                    <img class="gallery-thumb" id="thumb-04" src="imagens/thumb-04.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                </li>
+                                <li>
+                                    <img class="gallery-thumb" id="thumb-05" src="imagens/thumb-05.jpg" alt="Nome da Imagem" title="Nome da Imagem"/>
+                                </li>
+                            </ul>
+                        </div>
+                        <a href="#" class="next" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
+                        <script>
+                            $(function () {
+                                $("#carrossel").jCarouselLite({
+                                    btnPrev: '.prev',
+                                    btnNext: '.next',
+                                    visible: 4
+                                });
+                            });
+
+                            document.getElementById('thumb-01').onclick = function () {
+                                document.getElementById('gallery-01').className = 'gallery-img on';
+                                document.getElementById('gallery-02').className = 'gallery-img off';
+                                document.getElementById('gallery-03').className = 'gallery-img off';
+                                document.getElementById('gallery-04').className = 'gallery-img off';
+                                document.getElementById('gallery-05').className = 'gallery-img off';
+                            };
+                            document.getElementById('thumb-02').onclick = function () {
+                                document.getElementById('gallery-01').className = 'gallery-img off';
+                                document.getElementById('gallery-02').className = 'gallery-img on';
+                                document.getElementById('gallery-03').className = 'gallery-img off';
+                                document.getElementById('gallery-04').className = 'gallery-img off';
+                                document.getElementById('gallery-05').className = 'gallery-img off';
+                            };
+                            document.getElementById('thumb-03').onclick = function () {
+                                document.getElementById('gallery-01').className = 'gallery-img off';
+                                document.getElementById('gallery-02').className = 'gallery-img off';
+                                document.getElementById('gallery-03').className = 'gallery-img on';
+                                document.getElementById('gallery-04').className = 'gallery-img off';
+                                document.getElementById('gallery-05').className = 'gallery-img off';
+                            };
+                            document.getElementById('thumb-04').onclick = function () {
+                                document.getElementById('gallery-01').className = 'gallery-img off';
+                                document.getElementById('gallery-02').className = 'gallery-img off';
+                                document.getElementById('gallery-03').className = 'gallery-img off';
+                                document.getElementById('gallery-04').className = 'gallery-img on';
+                                document.getElementById('gallery-05').className = 'gallery-img off';
+                            };
+                            document.getElementById('thumb-05').onclick = function () {
+                                document.getElementById('gallery-01').className = 'gallery-img off';
+                                document.getElementById('gallery-02').className = 'gallery-img off';
+                                document.getElementById('gallery-03').className = 'gallery-img off';
+                                document.getElementById('gallery-04').className = 'gallery-img off';
+                                document.getElementById('gallery-05').className = 'gallery-img on';
+                            };
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
