@@ -10,7 +10,6 @@ body{
 	color: #fff;
 	font-family: nexa;
 	letter-spacing: 2px;
-	font-weight: 
 }
 
 h1, .h1{
@@ -197,6 +196,73 @@ header{
             background-color: #da8937;
             width: 100%;
         }
+        
+    .rooms {
+        width: 100%;
+        background-color: #fff;
+    }
+    
+        .rooms-header {
+            background-color: #435ecf;
+            width: 100%;
+        }
+        
+            h2.rooms-pretitle {
+                font-family: arial, sans-serif;
+                color: #000;
+                font-size: 1.8em;
+                text-align: center;
+                font-weight: lighter;
+                margin: 0;
+                padding-top: 45px;
+                letter-spacing: 0;
+            }
+
+            h2.rooms-title {
+                font-family: arial, sans-serif;
+                color: #000;
+                font-size: 1.8em;
+                text-align: center;
+                font-weight: bold;
+                margin: 0 auto;
+                display: inline-block;
+                width: 100%;
+                padding-top: 45px;
+                padding-bottom: 0;
+
+            }
+            
+            p.rooms-subtitle {
+                font-family: arial, sans-serif;
+                color: #000;
+                font-size: 0.8em;
+                text-align: center;
+                font-weight: normal;
+                margin: 0 auto;
+                display: inline-block;
+                width: 100%;
+                padding-top: 0px;
+            }
+        
+        .rooms-main {
+            width: 100%;
+            height: auto;
+        }
+            
+            #sala-a, #sala-b, #sala-c {
+                font-family: arial, sans-serif; 
+                font-size: 0.8em; 
+                font-weight: normal;
+            }
+        
+            .menu-salas {
+                float: left ;
+                margin-left: 50px;
+            }
+            
+                .menu-salas p {
+                    color:#000 ;
+                }
 
     
                                         

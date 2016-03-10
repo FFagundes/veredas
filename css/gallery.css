@@ -10,9 +10,10 @@
 	margin: 0 auto;
 	width: 890px;
 	height: 200px;
+        position: relative;
 }
 
-#carrossel {
+#carrossel, #car-sala-a, #car-sala-b, #car-sala-c {
 	float: left;
 	width: 650px;
 	overflow: hidden;
@@ -20,11 +21,15 @@
         margin-left: 20px;
 }
 
-#carrossel ul {
+#car-sala-a, #car-sala-b, #car-sala-c {
+    width: 450px;
+}
+
+#carrossel ul, #car-sala-a ul, #car-sala-b ul, #car-sala-c ul {
 	float: left;
         width: 600px;
 }
-#carrossel ul li {
+#carrossel ul li, #car-sala-a ul li, #car-sala-b ul li, #car-sala-c ul li {
 	width: 200px;
 	height: 150px;
 	float: left;
@@ -42,6 +47,7 @@
 	position: absolute;
 	width: 25px;
 	text-align: center;
+        left:0;
 }
 
 .gallery-thumb {
@@ -86,57 +92,10 @@
 
 .on {display: block; }
 .on img {opacity: 1;
-        -web-kit-transition: all 2s;
         }
 
 .off {display: none;}
 .off img {opacity: 0;}
 
-@-webkit-keyframes animate-width {
-    0% {
-        width: 0;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-@-moz-keyframes animate-width {
-    0% {
-        width: 0;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-@keyframes animate-width {
-    0% {
-        width: 0;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-@-webkit-keyframes animate-height {
-    0% {
-        height: 0;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-@-moz-keyframes animate-height {
-    0% {
-        height: 0;
-    }
-    100% {
-        visibility: visible;
-    }
-}
-@keyframes animate-height {
-    0% {
-        height: 0;
-    }
-    100% {
-        visibility: visible;
-    }
-}
+.room-on {position: absolute; top: 0; opacity: 1;}
+.room-off {position: absolute; top: 0; opacity:0;}
