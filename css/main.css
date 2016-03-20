@@ -247,6 +247,7 @@ header{
         .rooms-main {
             width: 100%;
             height: auto;
+            position: relative;
         }
             
             #sala-a, #sala-b, #sala-c {
@@ -254,6 +255,76 @@ header{
                 font-size: 0.8em; 
                 font-weight: normal;
             }
+            
+            .salas-conteudo {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 80%;
+                margin: 45px 10% 0;
+                height: auto;
+                /*background-color: rgba(255,255,255,0.5);*/
+                z-index: 10;          
+            }
+            
+            .salas-conteudo > p {
+                font-size: 2em;
+                width: 195px;
+                text-align: center;
+            }
+            
+            .salas-bt-agendar:hover, .salas-bt-equipamentos:hover {
+                background-color: rgba(0,0,0,0.5);
+                cursor: pointer;
+            }
+            
+            .salas-bt-agendar {
+            width: 175px;
+            height: 20px;
+            border: 2px solid #fff;
+            padding: 8px;
+            padding-bottom: 12px;
+            margin-top: 7px;
+        }
+        
+        .salas-bt-agendar p {
+            font-size: 1em;
+            color: #fff;
+            margin: 0;
+            text-align: center;
+        }
+        
+        .salas-bt-equipamentos {
+            
+            
+            border: 2px solid #fff;
+            padding: 8px;
+            padding-bottom: 12px;
+            margin-top: 25px;
+            background-color: transparent;
+        }
+        
+        .salas-bt-equipamentos p {
+            float: left;
+            color: #fff;
+            font-size: 1em;
+            text-align: center;
+            margin-left: 15px;
+        }
+        
+        .salas-bt-equipamentos .arrow-down-div {
+            float: left;
+            margin-top: 2px;
+            margin-left: 5px;
+            background-image: url(../imagens/icon-map-24.png);
+            width: 24px;
+            height: 24px;
+        }
+        
+        .equipamentos-conteudo {
+            background-color: rgba(0,0,0,0.5);
+            display: none;
+        }
         
             .menu-salas {
                 float: left ;
