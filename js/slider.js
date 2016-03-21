@@ -6,13 +6,13 @@
 		$('.slider-active').css('display', 'block');
 		add_pager();
 
-		$('.right-arrow').click(function(e){
+		$('.slider-right-arrow').click(function(e){
 			e.preventDefault();
 			var parent = $(this).closest('.slider-content');
 			slider('right', parent);
 		});
 
-		$('.left-arrow').click(function(e){
+		$('.slider-left-arrow').click(function(e){
 			e.preventDefault();
 			var parent = $(this).closest('.slider-content');
 			slider('left', parent);

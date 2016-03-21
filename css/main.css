@@ -51,6 +51,11 @@ p{
 	margin: 0 auto;
 }
 
+header .content-wrapper{
+	width: 90%;
+	max-width: none;
+}
+
 .title-left{
     float: left;
     width: 20%;
@@ -128,6 +133,43 @@ header{
 .main{
        width: 100%;
 }
+	.social{
+		position: absolute;
+		left: 50%;
+		width: 186px;
+		margin: 0 0 0 -93px;
+		padding: 0;
+		bottom: 150px;
+		list-style: none;
+	}
+
+		.social li{
+			display: inline;
+		}
+
+			.social-link{
+				text-indent: -9999px;
+				display: block;
+				width: 32px;
+				height: 32px;
+				float: left;
+				margin: 0 15px;
+			}
+
+				.social-facebook{ background: url('../imagens/icon-map32.png') -96px 0 no-repeat; }
+				.social-instagram{ background: url('../imagens/icon-map32.png') -64px 0 no-repeat; }
+				.social-twitter{ background: url('../imagens/icon-map32.png') -128px 0 no-repeat; }
+
+		.social-bar{
+			clear: both;
+			padding: 0;
+			margin: 25px 0 0 0;
+			border-top: none;
+			border-left: 5px solid transparent;
+			border-right: 5px solid transparent;
+			border-bottom: 10px solid #fff;
+		}
+
     .about{
         width: 100%;
         background-color: #c0dd9b;

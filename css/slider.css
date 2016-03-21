@@ -8,17 +8,26 @@
 	position: relative;
 	overflow: hidden;
 	background-color: #000;
+	user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
 }
 
 	.slider-content .slider-list {
 		width: 100%;
+		height: 100%;
 		margin: 0;
 		padding: 0;
 		list-style: none;
+		position: relative;
 	}
 
 	.slider-content .slider-list li{
 		width: 100%;
+		height: 100%;
+		overflow: hidden;
 		display: none;
 		position: absolute;
 		top: 0;
@@ -31,40 +40,57 @@
 		display: block;
 	}
 
+	.slider-content .slider-title{
+		width: 18em;
+		font-size: 3.5em;
+		line-height: 40px;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		display: block;
+		margin: 0 auto 0 -9em;
+		padding: 0.5em;
+		border: 1px solid #fff;
+		color: #fff;
+		text-align: center;
+		text-shadow: 2px 2px 5px #000;
+		background-color: rgba(0, 0, 0, 0.3);
+
+	}
+
 	/**********/
 	/* Arrows */
 	/**********/
 
 	.slider-content .slider-arrow{
 		position: absolute;
-		top: 45%;
+		top: 50%;
 		display: block;
 		z-index: 5;
-		margin: 0px 5px;
-		width: 0; 
-		height: 0; 
-		border-top: 40px solid transparent;
-		border-bottom: 40px solid transparent;
+		width: 32px; 
+		height: 32px;
+		border: 10px solid #2E3339;
+		border-top-width: 30px;
+		border-bottom-width: 30px;
+		cursor: pointer;
+		background-color: #2E3339;
+		background-image: url('../imagens/icon-map32.png');
 	}
 
-	.slider-content .slider-left-arrow{
-		left:10px;
-		border-right: 25px solid #fff;
-	}
-
-		.slider-content .slider-left-arrow:hover{
-			border-right-color: #666;
+		.slider-content .slider-arrow:hover{
+			background-color: #5E6369;
+			border-color: #5E6369;
 		}
+	
+	.slider-content .slider-left-arrow{
+		left: 0px;
+		background-position: -32px 0;
+	}
 
 	.slider-content .slider-right-arrow{
-		right:10px;
-		border-left: 25px solid #fff;
+		right: 0px;
+		background-position: 0 0;
 	}
-
-		.slider-content .slider-right-arrow:hover{
-			border-left-color: #666;
-		}
-
 
 		/* PAGER */
 		.slider-pager{
