@@ -220,7 +220,32 @@
 
                 <!-- Begin Content SALA A -->
                 <div id="main-sala-a" class="rooms-main">
-
+                    <div class="salas-conteudo">
+                        <p>sala [A]</p>
+                        <div class="salas-bt-agendar">
+                            <p>agendar</p>
+                        </div>
+                        <div class="salas-bt-equipamentos" style="width: 175px; background-position: 0 0;">
+                            <p>equipamentos</p>
+                            <div class="arrow-down-div"></div>
+                            <div class="clear"></div>
+                            <div class="equipamentos-conteudo">
+                                <p>pudins pudins, pudins de piracicaba!</p>
+                                <p>pudins pudins, pudins de piracicaba!</p>
+                                <p>pudins pudins, pudins de piracicaba!</p>
+                                <p>pudins pudins, pudins de piracicaba!</p>
+                                <p>pudins pudins, pudins de piracicaba!</p>
+                                <p>pudins pudins, pudins de piracicaba!</p>                            
+                            </div>
+                        </div>
+                        <script>
+                        $(".salas-bt-equipamentos").click(function(){
+                        $(".salas-bt-equipamentos").animate({width: "500px"}, 700);
+                        $(".salas-bt-equipamentos").css("background-color", "rgba(0,0,0,0.5");
+                        $(".equipamentos-conteudo").show(800);
+                        });
+                        </script>
+                    </div>
 
                     <div class="gallery-img on" id="sala-a-01">
                         <img src="imagens/sala-a-01.jpg" alt="" />
