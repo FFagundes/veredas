@@ -41,8 +41,12 @@
 	width: 25px;
 	text-align: center;
         margin-left: -5px;
+        right: 10px;
 }
 
+.next-2 {
+    right: 220px;
+}
 .prev {
 	position: absolute;
 	width: 25px;
@@ -96,6 +100,9 @@
 
 .off {display: none;}
 .off img {opacity: 0;}
+.offf {
+    display: none;
+}
 
 .room-on {position: absolute; top: 0; opacity: 1;}
 .room-off {position: absolute; top: 0; opacity:0;}

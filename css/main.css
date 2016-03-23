@@ -315,10 +315,6 @@ header{
                 text-align: center;
             }
             
-            .salas-bt-agendar:hover, .salas-bt-equipamentos:hover {
-                background-color: rgba(0,0,0,0.5);
-                cursor: pointer;
-            }
             
             .salas-bt-agendar {
             width: 175px;
@@ -327,6 +323,8 @@ header{
             padding: 8px;
             padding-bottom: 12px;
             margin-top: 7px;
+            background-color: rgba(0,0,0,0.5);
+            cursor: pointer;
         }
         
         .salas-bt-agendar p {
@@ -336,36 +334,55 @@ header{
             text-align: center;
         }
         
-        .salas-bt-equipamentos {
+        .salas-bt-equipamentos, .salas-bt-equipamentos-up {
             
             
             border: 2px solid #fff;
             padding: 8px;
-            padding-bottom: 12px;
+            padding-bottom: 10px;
             margin-top: 25px;
-            background-color: transparent;
+            background-color: rgba(0,0,0,0.5);
         }
         
-        .salas-bt-equipamentos p {
+        .salas-bt-equipamentos p, .salas-bt-equipamentos-up p {
             float: left;
             color: #fff;
             font-size: 1em;
             text-align: center;
-            margin-left: 15px;
+            margin: 0 0 0 5px;
         }
         
-        .salas-bt-equipamentos .arrow-down-div {
+        .salas-bt-equipamentos .arrow-down-div, .salas-bt-equipamentos-up .arrow-up-div {
             float: left;
             margin-top: 2px;
             margin-left: 5px;
             background-image: url(../imagens/icon-map-24.png);
             width: 24px;
             height: 24px;
+            cursor: pointer;
         }
         
+        .salas-bt-equipamentos .arrow-up-div, .salas-bt-equipamentos-up .arrow-up-div {
+            float: left;
+            margin-top: 2px;
+            margin-left: 5px;
+            background-image: url(../imagens/icon-map-24.png);
+            width: 24px;
+            height: 24px;
+            background-position: -24px 0;
+            
+        }
+        
+        
+        
         .equipamentos-conteudo {
-            background-color: rgba(0,0,0,0.5);
             display: none;
+        }
+        
+        .equipamentos-conteudo img {
+            width: 450px;
+            margin: 0 auto;
+            display: block;
         }
         
             .menu-salas {
@@ -474,5 +491,10 @@ footer{
 				text-decoration: underline;
 			}
                         
+                
                         
+                        .offf img {
+    display: none;
+}
+
                        

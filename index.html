@@ -62,12 +62,12 @@
                         <img src="imagens/banner_1.jpg" />
                         <p class="slider-title">Experimente nosso valvulados</p>
                     </li>
-                    
+
                     <li>
                         <img src="imagens/banner_2.jpg" />
                         <p class="slider-title">Quem já conferiu</p>
                     </li>
-                    
+
                     <li>
                         <img src="imagens/banner_3.jpg" />
                         <p class="slider-title">Conheça nossas salas</p>
@@ -225,26 +225,16 @@
                         <div class="salas-bt-agendar">
                             <p>agendar</p>
                         </div>
-                        <div class="salas-bt-equipamentos" style="width: 175px; background-position: 0 0;">
+                        <div id="bt-equip" class="salas-bt-equipamentos" style="width: 175px; background-position: 0 0;">
                             <p>equipamentos</p>
-                            <div class="arrow-down-div"></div>
+                            <div id="arrow-down" class="arrow-down-div on"></div>
+                            <div id="arrow-up" class="arrow-up-div off"></div>
                             <div class="clear"></div>
-                            <div class="equipamentos-conteudo">
-                                <p>pudins pudins, pudins de piracicaba!</p>
-                                <p>pudins pudins, pudins de piracicaba!</p>
-                                <p>pudins pudins, pudins de piracicaba!</p>
-                                <p>pudins pudins, pudins de piracicaba!</p>
-                                <p>pudins pudins, pudins de piracicaba!</p>
-                                <p>pudins pudins, pudins de piracicaba!</p>                            
+                            <div id="conteudo-equip" class="equipamentos-conteudo">
+                                <img src="imagens/equip-temp.png" alt="" />                        
                             </div>
                         </div>
-                        <script>
-                        $(".salas-bt-equipamentos").click(function(){
-                        $(".salas-bt-equipamentos").animate({width: "500px"}, 700);
-                        $(".salas-bt-equipamentos").css("background-color", "rgba(0,0,0,0.5");
-                        $(".equipamentos-conteudo").show(800);
-                        });
-                        </script>
+
                     </div>
 
                     <div class="gallery-img on" id="sala-a-01">
@@ -288,7 +278,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <a class="next" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
+                        <a class="next next-2" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
                         <div class="menu-salas">
                             <p id="menu-sala-a-a" style="display: none;">sala <b>[A]</b></p>
                             <p id="menu-sala-a-b" style="display: block;">sala <b>[B]</b></p>
@@ -302,6 +292,23 @@
 
                 <!-- Begin Content SALA B -->
                 <div id="main-sala-b" class="rooms-main room-off">
+
+                    <div class="salas-conteudo">
+                        <p>sala [B]</p>
+                        <div class="salas-bt-agendar">
+                            <p>agendar</p>
+                        </div>
+                        <div id="bt-equip2" class="salas-bt-equipamentos" style="width: 175px; background-position: 0 0;">
+                            <p>equipamentos</p>
+                            <div id="arrow-down2" class="arrow-down-div on"></div>
+                            <div id="arrow-up2" class="arrow-up-div off"></div>
+                            <div class="clear"></div>
+                            <div id="conteudo-equip2" class="equipamentos-conteudo">
+                                <img src="imagens/equip-temp.png" alt="" />                        
+                            </div>
+                        </div>
+                       
+                    </div>
 
 
                     <div class="gallery-img on" id="sala-b-01">
@@ -345,7 +352,7 @@
                             </ul>
                         </div>
 
-                        <a class="next" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
+                        <a class="next next-2" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
                         <div class="menu-salas">
                             <p id="menu-sala-b-a" style="display: block;">sala <b>[A]</b></p>
                             <p id="menu-sala-b-b" style="display: none;">sala <b>[B]</b></p>
@@ -358,6 +365,23 @@
 
                 <!-- Begin Content SALA C -->
                 <div id="main-sala-c" class="rooms-main room-off">
+
+                    <div class="salas-conteudo">
+                        <p>sala [C]</p>
+                        <div class="salas-bt-agendar">
+                            <p>agendar</p>
+                        </div>
+                        <div id="bt-equip3" class="salas-bt-equipamentos" style="width: 175px; background-position: 0 0;">
+                            <p>equipamentos</p>
+                            <div id="arrow-down3" class="arrow-down-div on"></div>
+                            <div id="arrow-up3" class="arrow-up-div off"></div>
+                            <div class="clear"></div>
+                            <div id="conteudo-equip3" class="equipamentos-conteudo">
+                                <img src="imagens/equip-temp.png" alt="" />                        
+                            </div>
+                        </div>
+                       
+                    </div>
 
 
                     <div class="gallery-img on" id="sala-c-01">
@@ -401,7 +425,7 @@
                             </ul>
                         </div>
 
-                        <a class="next" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
+                        <a class="next next-2" title="Próximo"><img src="imagens/next.jpg" alt="" /></a>
                         <div class="menu-salas">
                             <p id="menu-sala-c-a" style="display: block;">sala <b>[A]</b></p>
                             <p id="menu-sala-c-b" style="display: block;">sala <b>[B]</b></p>
@@ -412,7 +436,118 @@
                 </div>
                 <!-- End Content SALA C -->
 
+                <script>
+                    $("#arrow-down").click(function () {
+                        $(".salas-bt-equipamentos").animate({width: "500px"}, 700);
+                        $(".equipamentos-conteudo").show(800);
+                        $(".equipamentos-conteudo").animate({height: "250px"}, 700);
+                        document.getElementById('arrow-down').className = 'arrow-down-div off';
+                        document.getElementById('arrow-down2').className = 'arrow-down-div off';
+                        document.getElementById('arrow-down3').className = 'arrow-down-div off';
+                        document.getElementById('arrow-up').className = 'arrow-up-div on';
+                        document.getElementById('arrow-up2').className = 'arrow-up-div on';
+                        document.getElementById('arrow-up3').className = 'arrow-up-div on';
+                        document.getElementById('bt-equip').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('bt-equip2').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('bt-equip3').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('conteudo-equip').className = 'equipamentos-conteudo';
+                        document.getElementById('conteudo-equip2').className = 'equipamentos-conteudo';
+                        document.getElementById('conteudo-equip3').className = 'equipamentos-conteudo';
+                    });
+                    $("#arrow-down2").click(function () {
+                        $(".salas-bt-equipamentos").animate({width: "500px"}, 700);
+                        $(".equipamentos-conteudo").show(800);
+                        $(".equipamentos-conteudo").animate({height: "250px"}, 700);
+                        document.getElementById('arrow-down').className = 'arrow-down-div off';
+                        document.getElementById('arrow-down2').className = 'arrow-down-div off';
+                        document.getElementById('arrow-down3').className = 'arrow-down-div off';
+                        document.getElementById('arrow-up').className = 'arrow-up-div on';
+                        document.getElementById('arrow-up2').className = 'arrow-up-div on';
+                        document.getElementById('arrow-up3').className = 'arrow-up-div on';
+                        document.getElementById('bt-equip').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('bt-equip2').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('bt-equip3').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('conteudo-equip').className = 'equipamentos-conteudo';
+                        document.getElementById('conteudo-equip2').className = 'equipamentos-conteudo';
+                        document.getElementById('conteudo-equip3').className = 'equipamentos-conteudo';
+                    });
+                    $("#arrow-down3").click(function () {
+                        $(".salas-bt-equipamentos").animate({width: "500px"}, 700);
+                        $(".equipamentos-conteudo").show(800);
+                        $(".equipamentos-conteudo").animate({height: "250px"}, 700);
+                        document.getElementById('arrow-down').className = 'arrow-down-div off';
+                        document.getElementById('arrow-down2').className = 'arrow-down-div off';
+                        document.getElementById('arrow-down3').className = 'arrow-down-div off';
+                        document.getElementById('arrow-up').className = 'arrow-up-div on';
+                        document.getElementById('arrow-up2').className = 'arrow-up-div on';
+                        document.getElementById('arrow-up3').className = 'arrow-up-div on';
+                        document.getElementById('bt-equip').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('bt-equip2').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('bt-equip3').className = 'salas-bt-equipamentos-up';
+                        document.getElementById('conteudo-equip').className = 'equipamentos-conteudo';
+                        document.getElementById('conteudo-equip2').className = 'equipamentos-conteudo';
+                        document.getElementById('conteudo-equip3').className = 'equipamentos-conteudo';
+                    });
 
+                    $("#arrow-up").click(function () {
+                        $("#bt-equip").animate({width: "175px"}, 700);
+                        $("#bt-equip2").animate({width: "175px"}, 700);
+                        $("#bt-equip3").animate({width: "175px"}, 700);
+                        $('#conteudo-equip').hide(500);
+                        $('#conteudo-equip2').hide(500);
+                        $('#conteudo-equip3').hide(500);
+                        $(".equipamentos-conteudo").animate({height: "0px"}, 700);
+                        document.getElementById('arrow-down').className = 'arrow-down-div on';
+                        document.getElementById('arrow-down2').className = 'arrow-down-div on';
+                        document.getElementById('arrow-down3').className = 'arrow-down-div on';
+                        document.getElementById('arrow-up').className = 'arrow-up-div off';
+                        document.getElementById('arrow-up2').className = 'arrow-up-div off';
+                        document.getElementById('arrow-up3').className = 'arrow-up-div off';
+                        document.getElementById('bt-equip').className = 'salas-bt-equipamentos';
+                        document.getElementById('bt-equip2').className = 'salas-bt-equipamentos';
+                        document.getElementById('bt-equip3').className = 'salas-bt-equipamentos';
+
+                    });
+                    $("#arrow-up2").click(function () {
+                        $("#bt-equip").animate({width: "175px"}, 700);
+                        $("#bt-equip2").animate({width: "175px"}, 700);
+                        $("#bt-equip3").animate({width: "175px"}, 700);
+                        $('#conteudo-equip').hide(500);
+                        $('#conteudo-equip2').hide(500);
+                        $('#conteudo-equip3').hide(500);
+                        $(".equipamentos-conteudo").animate({height: "0px"}, 700);
+                        document.getElementById('arrow-down').className = 'arrow-down-div on';
+                        document.getElementById('arrow-down2').className = 'arrow-down-div on';
+                        document.getElementById('arrow-down3').className = 'arrow-down-div on';
+                        document.getElementById('arrow-up').className = 'arrow-up-div off';
+                        document.getElementById('arrow-up2').className = 'arrow-up-div off';
+                        document.getElementById('arrow-up3').className = 'arrow-up-div off';
+                        document.getElementById('bt-equip').className = 'salas-bt-equipamentos';
+                        document.getElementById('bt-equip2').className = 'salas-bt-equipamentos';
+                        document.getElementById('bt-equip3').className = 'salas-bt-equipamentos';
+
+                    });
+                    $("#arrow-up3").click(function () {
+                        $("#bt-equip").animate({width: "175px"}, 700);
+                        $("#bt-equip2").animate({width: "175px"}, 700);
+                        $("#bt-equip3").animate({width: "175px"}, 700);
+                        $('#conteudo-equip').hide(500);
+                        $('#conteudo-equip2').hide(500);
+                        $('#conteudo-equip3').hide(500);
+                        $(".equipamentos-conteudo").animate({height: "0px"}, 700);
+                        document.getElementById('arrow-down').className = 'arrow-down-div on';
+                        document.getElementById('arrow-down2').className = 'arrow-down-div on';
+                        document.getElementById('arrow-down3').className = 'arrow-down-div on';
+                        document.getElementById('arrow-up').className = 'arrow-up-div off';
+                        document.getElementById('arrow-up2').className = 'arrow-up-div off';
+                        document.getElementById('arrow-up3').className = 'arrow-up-div off';
+                        document.getElementById('bt-equip').className = 'salas-bt-equipamentos';
+                        document.getElementById('bt-equip2').className = 'salas-bt-equipamentos';
+                        document.getElementById('bt-equip3').className = 'salas-bt-equipamentos';
+
+                    });
+
+                </script>
 
                 <script>
 
