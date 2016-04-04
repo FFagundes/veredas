@@ -130,7 +130,7 @@ header{
 				float: left;	
 			}
 
-				.menu-item a{
+				.menu-link{
 					color: #fff;
 					text-decoration: none;
 					font-size: 20px;
@@ -140,13 +140,24 @@ header{
 					margin: 15px 0 0 0;
 				}
 
-					.menu-item a:hover{
-						background-color: #fff;
+					.menu-link:hover, .menu-link.white{
 						color: #000;
+						background-color: #fff;
 					}
 
-					.menu-item a.green:hover{
+					.menu-link.green{
+						color: #000;
 						background-color: #c0dd9b;
+					}
+
+					.menu-link.blue{
+						color: #fff;
+						background-color: #435ECF;
+					}
+
+					.menu-link.orange{
+						color: #000;
+						background-color: #DA8937;
 					}
 
 .main{
@@ -406,6 +417,8 @@ header{
 										
 footer{
 	background-color: #000;
+	position: relative;
+	min-height: 90%;
 }
 
 	.footer-header{
@@ -466,8 +479,11 @@ footer{
 			}
 
 	.footer-footer{
+		width: 100%;
 		background-color: #fff;
 		color: #666;
+		position: absolute;
+		bottom: 0;
 	}
 
 		.footer-footer p{

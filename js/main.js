@@ -11,12 +11,20 @@
 	
 		$('.menu-link').on('click', function(e){
 			var link = $(this).attr('href'),
-				margin = $(header).height();
+				margin = $(header).height(),
+				color = $(this).attr('data-color'),
+				time = 500;
+				that = this;
+
 			e.preventDefault();
 
-			console.log(margin);
 			$('html, body').animate({
 				scrollTop: $(link).offset().top - margin
+			}, time);
+
+			window.setTimeout(function(){
+				$('.menu-link').removeClass('white green blue orange');
+				$(that).addClass(color);
 			}, 500);
 		});
 	});
