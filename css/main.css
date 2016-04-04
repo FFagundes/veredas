@@ -340,6 +340,26 @@ header{
 			text-align: center;
 			margin: 0 0 0 5px;
 		}
+                
+                .um-quarto {
+                    float:left;
+                    width: 23%;
+                }
+                
+                .salas-bt-equipamentos-up .equip-title {
+                    display: inline-block;
+                    float: none;
+                    font-size: 1em;
+                    font-weight: bold;
+                    text-align: left;
+                }
+                .salas-bt-equipamentos-up .equip-text {
+                    display: inline-block;
+                    float: none;
+                    font-size: 1em;
+                    font-weight: normal;
+                    text-align: left;
+                }
 		
 		.salas-bt-equipamentos .arrow-down-div, .salas-bt-equipamentos-up .arrow-up-div {
 			float: left;
@@ -362,7 +382,9 @@ header{
 			
 		}
 		
-		
+                .section-main {
+                    position: relative;
+                }
 		
 		.equipamentos-conteudo {
 			display: none;
@@ -515,4 +537,6 @@ footer{
 	display: none;
 }
 
+.room-on {position: relative; top: 0; opacity: 1;}
+.room-off {position: absolute; top: 0; opacity:0;}
 					   
