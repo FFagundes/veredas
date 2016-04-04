@@ -52,7 +52,8 @@ p{
 }
 
 	.button:hover{
-		background-color: #111;
+		background-color: #fff;
+		color: #000;
 	}
 
 .black{ color: #000; }
@@ -92,6 +93,11 @@ header{
 	top: 0;
 	left: 0;
 }
+	.fixed-header {
+			position: fixed;
+			top: 0;
+			z-index: 99;
+		}
 
 	.logo{
 		float: left;
@@ -113,7 +119,6 @@ header{
 	.menu{
 		float: right;
 	}
-
 		.menu-container{
 			padding: 0px;
 			margin: 0px;
@@ -185,7 +190,7 @@ header{
 		}
 
 	.section-header{
-	width: 100%;
+		width: 100%;
 	}
 
 		h2.section-pretitle {
@@ -380,6 +385,16 @@ header{
 		.calendar .section-main{
 			padding: 30px 10px;
 		}
+			.calendar-salas{
+				float: left;
+				margin: 0 20px 10px 0;
+			}
+
+				.calendar-salas.active{
+					background-color: #fff;
+					color: #000;
+				}
+
 			.calendar-agende{
 				float: right;
 				margin: 0 0 10px 0;
