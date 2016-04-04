@@ -41,13 +41,29 @@ p{
 	line-height: 1.8;
 }
 
+.button{
+	background-color: rgba(0, 0, 0, 0);
+	border: 2px solid #fff;
+	color: #fff;
+	font-size: 16px;
+	letter-spacing: 2px;
+	padding: 5px 40px;
+	cursor: pointer;
+}
+
+	.button:hover{
+		background-color: #111;
+	}
+
+.black{ color: #000; }
+
 .clear{
 	clear: both;
 }
 
 .content-wrapper{
 	width: 100%;
-    max-width: 1024px;
+	max-width: 1024px;
 	margin: 0 auto;
 }
 
@@ -57,17 +73,15 @@ header .content-wrapper{
 }
 
 .title-left{
-    float: left;
-    width: 20%;
-    margin: 0;
-    height: 125px;
+	float: left;
+	margin: 0 20px 0 20px;
+	height: 125px;
 }
 
 .title-right {
-    float: left;
-    width:  80%;
-    margin: 0;
-    height: 125px;
+	float: left;
+	margin: 0;
+	height: 125px;
 }
 
 header{
@@ -131,7 +145,7 @@ header{
 					}
 
 .main{
-       width: 100%;
+	   width: 100%;
 }
 	.social{
 		position: absolute;
@@ -170,232 +184,211 @@ header{
 			border-bottom: 10px solid #fff;
 		}
 
-    .about{
-        width: 100%;
-        background-color: #c0dd9b;
-    }
-    
-        .about-header{
-        width: 100%;
-        }
-    
-            h2.about-pretitle {
-                font-family: arial, sans-serif;
-                color: #000;
-                font-size: 1.8em;
-                text-align: center;
-                font-weight: lighter;
-                margin: 0;
-                padding-top: 45px;
-            }
+	.section-header{
+	width: 100%;
+	}
 
-            h2.about-title {
-                font-family: arial, sans-serif;
-                color: #000;
-                font-size: 1.8em;
-                text-align: center;
-                font-weight: bold;
-                margin: 0 auto;
-                display: inline-block;
-                width: 100%;
-                padding-top: 45px;
-                padding-bottom: 0;
+		h2.section-pretitle {
+			font-family: arial, sans-serif;
+			color: #000;
+			font-size: 1.8em;
+			text-align: left;
+			font-weight: lighter;
+			margin: 0;
+			padding-top: 45px;
+		}
 
-            }
-            
-            p.about-subtitle {
-                font-family: arial, sans-serif;
-                color: #000;
-                font-size: 0.8em;
-                text-align: center;
-                font-weight: normal;
-                margin: 0 auto;
-                display: inline-block;
-                width: 100%;
-                padding-top: 0px;
-            }
+		h2.section-title {
+			font-family: arial, sans-serif;
+			color: #000;
+			font-size: 1.8em;
+			text-align: left;
+			font-weight: bold;
+			margin: 0 auto;
+			display: inline-block;
+			padding: 0;
+			padding-top: 45px;
 
-        .about-text {
-            font-family: arial, sans-serif; 
-            font-size: 1em;
-            color: #000;
-            letter-spacing: 1px;
-            text-align: left;
-            margin-top: 0;
-        }    
-    
-        .mapa-sobre {
-            width: 100%;
-            display: block;
-        }
-        
-    .who-play {
-        width: 100%;
-        background-color: #fff;
-    }   
-    
-        .who-play-header {
-            background-color: #da8937;
-            width: 100%;
-        }
-        
-    .rooms {
-        width: 100%;
-        background-color: #fff;
-    }
-    
-        .rooms-header {
-            background-color: #435ecf;
-            width: 100%;
-        }
-        
-            h2.rooms-pretitle {
-                font-family: arial, sans-serif;
-                color: #000;
-                font-size: 1.8em;
-                text-align: center;
-                font-weight: lighter;
-                margin: 0;
-                padding-top: 45px;
-                letter-spacing: 0;
-            }
+		}
+		
+		p.section-subtitle {
+			font-family: arial, sans-serif;
+			color: #000;
+			font-size: 0.8em;
+			text-align: left;
+			font-weight: normal;
+			padding-top: 0px;
+			margin: 0;
+		}
 
-            h2.rooms-title {
-                font-family: arial, sans-serif;
-                color: #000;
-                font-size: 1.8em;
-                text-align: center;
-                font-weight: bold;
-                margin: 0 auto;
-                display: inline-block;
-                width: 100%;
-                padding-top: 45px;
-                padding-bottom: 0;
+	.section-text {
+		font-family: arial, sans-serif; 
+		font-size: 1em;
+		color: #000;
+		letter-spacing: 1px;
+		text-align: left;
+		margin-top: 0;
+	}    
 
-            }
-            
-            p.rooms-subtitle {
-                font-family: arial, sans-serif;
-                color: #000;
-                font-size: 0.8em;
-                text-align: center;
-                font-weight: normal;
-                margin: 0 auto;
-                display: inline-block;
-                width: 100%;
-                padding-top: 0px;
-            }
-        
-        .rooms-main {
-            width: 100%;
-            height: auto;
-            position: relative;
-        }
-            
-            #sala-a, #sala-b, #sala-c {
-                font-family: arial, sans-serif; 
-                font-size: 0.8em; 
-                font-weight: normal;
-            }
-            
-            .salas-conteudo {
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 80%;
-                margin: 45px 10% 0;
-                height: auto;
-                /*background-color: rgba(255,255,255,0.5);*/
-                z-index: 10;          
-            }
-            
-            .salas-conteudo > p {
-                font-size: 2em;
-                width: 195px;
-                text-align: center;
-            }
-            
-            
-            .salas-bt-agendar {
-            width: 175px;
-            height: 20px;
-            border: 2px solid #fff;
-            padding: 8px;
-            padding-bottom: 12px;
-            margin-top: 7px;
-            background-color: rgba(0,0,0,0.5);
-            cursor: pointer;
-        }
-        
-        .salas-bt-agendar p {
-            font-size: 1em;
-            color: #fff;
-            margin: 0;
-            text-align: center;
-        }
-        
-        .salas-bt-equipamentos, .salas-bt-equipamentos-up {
-            
-            
-            border: 2px solid #fff;
-            padding: 8px;
-            padding-bottom: 10px;
-            margin-top: 25px;
-            background-color: rgba(0,0,0,0.5);
-        }
-        
-        .salas-bt-equipamentos p, .salas-bt-equipamentos-up p {
-            float: left;
-            color: #fff;
-            font-size: 1em;
-            text-align: center;
-            margin: 0 0 0 5px;
-        }
-        
-        .salas-bt-equipamentos .arrow-down-div, .salas-bt-equipamentos-up .arrow-up-div {
-            float: left;
-            margin-top: 2px;
-            margin-left: 5px;
-            background-image: url(../imagens/icon-map-24.png);
-            width: 24px;
-            height: 24px;
-            cursor: pointer;
-        }
-        
-        .salas-bt-equipamentos .arrow-up-div, .salas-bt-equipamentos-up .arrow-up-div {
-            float: left;
-            margin-top: 2px;
-            margin-left: 5px;
-            background-image: url(../imagens/icon-map-24.png);
-            width: 24px;
-            height: 24px;
-            background-position: -24px 0;
-            
-        }
-        
-        
-        
-        .equipamentos-conteudo {
-            display: none;
-        }
-        
-        .equipamentos-conteudo img {
-            width: 450px;
-            margin: 0 auto;
-            display: block;
-        }
-        
-            .menu-salas {
-                float: left ;
-                margin-left: 50px;
-            }
-            
-                .menu-salas p {
-                    color:#000 ;
-                }
+	.about{
+		width: 100%;
+		background-color: #c0dd9b;
+	}
+	
+		.mapa-sobre {
+			width: 100%;
+			display: block;
+		}
+		
+	.who-play {
+		width: 100%;
+		background-color: #fff;
+	}   
+	
+		.who-play-header {
+			background-color: #da8937;
+			width: 100%;
+		}
+		
+	.rooms {
+		width: 100%;
+		background-color: #fff;
+	}
+	
+		.rooms-header {
+			background-color: #435ecf;
+		}
+		
+		.rooms-main {
+			width: 100%;
+			height: auto;
+			position: relative;
+		}
+			
+			#sala-a, #sala-b, #sala-c {
+				font-family: arial, sans-serif; 
+				font-size: 0.8em; 
+				font-weight: normal;
+			}
+			
+			.salas-conteudo {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 80%;
+				margin: 45px 10% 0;
+				height: auto;
+				/*background-color: rgba(255,255,255,0.5);*/
+				z-index: 10;          
+			}
+			
+			.salas-conteudo > p {
+				font-size: 2em;
+				width: 195px;
+				text-align: center;
+			}
+			
+			
+			.salas-bt-agendar {
+			width: 175px;
+			height: 20px;
+			border: 2px solid #fff;
+			padding: 8px;
+			padding-bottom: 12px;
+			margin-top: 7px;
+			background-color: rgba(0,0,0,0.5);
+			cursor: pointer;
+		}
+		
+		.salas-bt-agendar p {
+			font-size: 1em;
+			color: #fff;
+			margin: 0;
+			text-align: center;
+		}
+		
+		.salas-bt-equipamentos, .salas-bt-equipamentos-up {
+			
+			
+			border: 2px solid #fff;
+			padding: 8px;
+			padding-bottom: 10px;
+			margin-top: 25px;
+			background-color: rgba(0,0,0,0.5);
+		}
+		
+		.salas-bt-equipamentos p, .salas-bt-equipamentos-up p {
+			float: left;
+			color: #fff;
+			font-size: 1em;
+			text-align: center;
+			margin: 0 0 0 5px;
+		}
+		
+		.salas-bt-equipamentos .arrow-down-div, .salas-bt-equipamentos-up .arrow-up-div {
+			float: left;
+			margin-top: 2px;
+			margin-left: 5px;
+			background-image: url(../imagens/icon-map-24.png);
+			width: 24px;
+			height: 24px;
+			cursor: pointer;
+		}
+		
+		.salas-bt-equipamentos .arrow-up-div, .salas-bt-equipamentos-up .arrow-up-div {
+			float: left;
+			margin-top: 2px;
+			margin-left: 5px;
+			background-image: url(../imagens/icon-map-24.png);
+			width: 24px;
+			height: 24px;
+			background-position: -24px 0;
+			
+		}
+		
+		
+		
+		.equipamentos-conteudo {
+			display: none;
+		}
+		
+		.equipamentos-conteudo img {
+			width: 450px;
+			margin: 0 auto;
+			display: block;
+		}
+		
+			.menu-salas {
+				float: left ;
+				margin-left: 50px;
+			}
+			
+				.menu-salas p {
+					color:#000 ;
+				}
 
-    
-                                        
+	.calendar {
+		background-color: #000;
+		color: #fff;
+	}
+
+		.calendar-header {
+			background-color: #fff;
+			color: #000;
+		}
+
+		.calendar .section-main{
+			padding: 30px 10px;
+		}
+			.calendar-agende{
+				float: right;
+				margin: 0 0 10px 0;
+			}
+
+			.calendar-iframe{
+				width: 100%;
+			}
+										
 footer{
 	background-color: #000;
 }
@@ -441,13 +434,7 @@ footer{
 
 			.contact-form-submit{
 				float: right;
-				background-color: rgba(0, 0, 0, 0);
-				border: 2px solid #fff;
-				color: #fff;
-				font-size: 16px;
-				letter-spacing: 2px;
 				margin: 10px 0 0 0;
-				padding: 5px 40px;
 			}
 
 
@@ -490,11 +477,11 @@ footer{
 			.credits a:hover{
 				text-decoration: underline;
 			}
-                        
-                
-                        
-                        .offf img {
-    display: none;
+						
+				
+						
+						.offf img {
+	display: none;
 }
 
-                       
+					   
