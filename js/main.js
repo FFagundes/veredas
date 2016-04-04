@@ -18,14 +18,14 @@
 
 			e.preventDefault();
 
-			$('html, body').animate({
-				scrollTop: $(link).offset().top - margin
-			}, time);
-
-			window.setTimeout(function(){
-				$('.menu-link').removeClass('white green blue orange');
-				$(that).addClass(color);
-			}, 500);
+			$('html, body').animate(
+				{scrollTop: $(link).offset().top - margin},
+				time,
+				function(){
+					$('.menu-link').removeClass('white green blue orange');
+					$(that).addClass(color);
+				}
+			);
 		});
 	});
 })(window.jQuery);
